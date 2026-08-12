@@ -1,0 +1,46 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.noteforge.editor"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.noteforge.editor"
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        // No AndroidX, no ViewBinding/DataBinding - the app is a single plain WebView Activity.
+        buildConfig = false
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Intentionally no extra dependencies - MainActivity uses only the platform WebView APIs.
+}

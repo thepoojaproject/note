@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base app theme: plain Android theme, no AndroidX/AppCompat required. -->
+    <style name="Theme.NoteForge" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/nf_background</item>
+        <item name="android:statusBarColor">@color/nf_status_bar</item>
+        <item name="android:navigationBarColor">@color/nf_status_bar</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Splash/launch theme shown for the instant before the WebView draws its first frame. -->
+    <style name="Theme.NoteForge.Splash" parent="Theme.NoteForge">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

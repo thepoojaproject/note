@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nf_background">#1E1F26</color>
+    <color name="nf_accent">#5B8CFF</color>
+    <color name="nf_status_bar">#14151B</color>
+</resources>
